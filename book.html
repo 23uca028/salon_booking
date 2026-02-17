@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book Appointment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <h1>House of Barber</h1>
+  
+</nav>
+
+<section class="section">
+  <h2>Book Appointment</h2>
+
+  <form action="book.php" method="post">
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="tel" name="phone" placeholder="Enter Phone Number" required>
+    
+    <select name="service" required>
+      <option value="">Select Service</option>
+      <option>Haircut</option>
+      <option>Beard</option>  
+      <option>Haircut & Beard</option>
+      <option>Facial</option>
+      <option>Manicure</option>
+    </select>
+	<label>Enter Date:</label> 
+    <input type="date" name="date" required>
+    <label>Enter Time:</label>  
+    <input type="time" name="time" required>
+
+    <button type="submit" class="btn">Confirm Booking</button>
+  </form>
+</section>
+
+<footer>© 2026 House of Barber</footer>
+<script src="script.js"></script>
+</body>
+</html>
